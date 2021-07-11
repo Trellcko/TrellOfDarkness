@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace TrellOfDarkness.Characters.Animation
+namespace TrellOfDarkness.Animation
 {
     [RequireComponent(typeof(Animator))]
     public class MovementAnimation : MonoBehaviour

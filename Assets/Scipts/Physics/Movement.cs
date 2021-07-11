@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace TrellOfDarkness.Characters.Common
+namespace TrellOfDarkness.Physics.Movement
 {
     [RequireComponent(typeof(Rigidbody2D))]
     public class Movement : MonoBehaviour

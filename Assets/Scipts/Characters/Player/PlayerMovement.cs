@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
+
+
 using TrellOfDarkness.Input;
-using TrellOfDarkness.Characters.Common;
-using TrellOfDarkness.Characters.Animation;
+using TrellOfDarkness.Physics.Movement;
+using TrellOfDarkness.Animation;
 
 namespace TrellOfDarkness.Characters.Player
 {
-    public class PlayerMovementHandler : MonoBehaviour
+    public class PlayerMovement
+        : MonoBehaviour
     {
-        [SerializeField] private Movement _movement;
+        [SerializeField] private  Movement _movement;
         [SerializeField] private MovementAnimation _animator;
 
         private void OnEnable()

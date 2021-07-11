@@ -24,25 +24,20 @@ namespace TrellOfDarkness.Input
 
         private Camera _mainCamera;
 
-        private const string Name = "InputController";
-
         private static InputController s_instance;
+
+        private const string Name = "InputController";
 
         public void Awake()
         {
             _mainCamera = Camera.main;
-
+            
             if (s_instance == null)
             {
                 Data = new InputData();
                 Data.Enable();
-
                 s_instance = this;
-                
-
-
                 DontDestroyOnLoad(gameObject);
-                
             }
 
             else if (FindObjectsOfType<InputController>().Length > 1)
